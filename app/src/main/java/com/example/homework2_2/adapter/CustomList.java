@@ -85,6 +85,7 @@ public class CustomList extends BaseAdapter {
                 i.putExtra("fname",dataSet.get(position).getFirstName());
                 i.putExtra("lname",dataSet.get(position).getLastName());
                 i.putExtra("pos",position);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(i);
 
             }
